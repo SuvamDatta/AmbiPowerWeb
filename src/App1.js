@@ -1,11 +1,9 @@
-import logo from "./logo.svg";
-import "./App.css";
 import React from "react";
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 
 const containerStyle = {
-  width: "700px",
-  height: "700px",
+  width: "100px",
+  height: "100px",
 };
 
 const center = {
