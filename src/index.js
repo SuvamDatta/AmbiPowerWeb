@@ -4,12 +4,13 @@ import './index.css';
 import App from "./Components/App";
 import Map from "./Components/Map";
 import Login from "./Components/Login";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
         <Route exact path="/" element={<App />}></Route>
+        <Route exact path="/App" element={<App />}></Route>
         <Route exact path="/Login" element={<Login />}></Route>
         <Route exact path="/Map" element={<Map />}></Route>
       </Routes>
