@@ -1,7 +1,7 @@
 # Stage 1: Use npm to build the app
 FROM node:16 as builder
 WORKDIR /usr/src/app
-COPY package.json package-lock.json ./
+COPY package.json ./
 RUN npm
 COPY . ./
 RUN npm build
