@@ -15,7 +15,7 @@ objects:
   metadata:
     labels:
       app: ${NAME}
-      app.kubernetes.io/component: react-hello-world
+      app.kubernetes.io/component: ambi-power-web
       app.kubernetes.io/instance: ${NAME}
     name: ${NAME}
   spec:
@@ -43,7 +43,7 @@ objects:
   metadata:
     labels:
       app: ${NAME}
-      app.kubernetes.io/component: react-hello-world
+      app.kubernetes.io/component: ambi-power-web
       app.kubernetes.io/instance: ${NAME}
     name: ${NAME}
   spec:
@@ -58,7 +58,7 @@ objects:
         containers:
         - image: ${NAME}
           imagePullPolicy: Always
-          name: react-hello-world
+          name: ambi-power-web
           ports:
           - containerPort: 8080
             protocol: TCP
@@ -76,7 +76,7 @@ objects:
       imageChangeParams:
         automatic: true
         containerNames:
-        - react-hello-world
+        - ambi-power-web
         from:
           kind: ImageStreamTag
           name: ${NAME}:latest
@@ -85,7 +85,7 @@ objects:
   metadata:
     labels:
       app: ${NAME}
-      app.kubernetes.io/component: react-hello-world
+      app.kubernetes.io/component: ambi-power-web
       app.kubernetes.io/instance: ${NAME}
     name: ${NAME}
   spec:
@@ -102,7 +102,7 @@ objects:
   metadata:
     labels:
       app: ${NAME}
-      app.kubernetes.io/component: react-hello-world
+      app.kubernetes.io/component: ambi-power-web
       app.kubernetes.io/instance: ${NAME}
     name: nginx
   spec:
@@ -122,7 +122,7 @@ objects:
   metadata:
     labels:
       app: ${NAME}
-      app.kubernetes.io/component: react-hello-world
+      app.kubernetes.io/component: ambi-power-web
       app.kubernetes.io/instance: ${NAME}
     name: ${NAME}
   spec:
@@ -133,7 +133,7 @@ objects:
   metadata:
     labels:
       app: ${NAME}
-      app.kubernetes.io/component: react-hello-world
+      app.kubernetes.io/component: ambi-power-web
       app.kubernetes.io/instance: ${NAME}
     name: ${NAME}
   spec:
@@ -151,7 +151,7 @@ parameters:
   displayName: Name
   name: NAME
   required: true
-  value: react-hello-world
+  value: ambi-power-web
 - description: The URL of the repository with your application source code.
   displayName: Git Repository URL
   name: SOURCE_REPOSITORY_URL
@@ -166,4 +166,4 @@ parameters:
     of your repository.
   displayName: Context Directory
   name: CONTEXT_DIR
-  value: react-hello-world
+  value: ambi-power-web
