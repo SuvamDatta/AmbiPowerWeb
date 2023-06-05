@@ -1,5 +1,5 @@
 # Stage 1: Use npm to build the app
-FROM node:16 as builder
+FROM node:12 as builder
 WORKDIR /usr/src/app
 COPY package.json ./
 RUN npm install
