@@ -17,7 +17,7 @@ function App() {
         <br />
         <br />
         <br />
-        <Link to="/Home">
+        <Link to="/Login">
           <button className="box" type="submit">
             <text className="Logintext">Login to Explore</text>
             <img

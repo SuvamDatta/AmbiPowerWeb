@@ -2,6 +2,8 @@ import { React, useRef, useEffect, useState, useCallback } from "react";
 import { Link } from "react-router-dom";
 import $ from "jquery";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import Sidebar from "./Sidebar";
+import "./Home.css";
 function Home() {
   const height = $(window).height();
   const width = $(window).width();
@@ -79,8 +81,12 @@ function Home() {
           width: width * 0.2,
           marginTop: 1,
         }}
-        className="leftpanel"
-      ></div>
+        className=""
+      > 
+       <div id="page-wrap">
+      <Sidebar/>
+      </div>
+    </div>
       <div
         style={{
           height: "100%",
