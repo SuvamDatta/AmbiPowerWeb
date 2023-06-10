@@ -29,11 +29,25 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <div>
+      <img class="hamburgermenu" src="../%PUBLIC_URL%/hamburgermenu.png" />
+    </div>
     <div class="App-header">
       <div class="blank"></div>
       <text class="text">AmbiPower Super-Service</text>
     </div>
     <div id="root"></div>
+    <script>
+      $('.hamburgermenu').on('click',function(){
+        if($('.leftpanel').hasClass('displaynone')){
+          $('.leftpanel').removeClass('displaynone');
+        }
+        else{
+          $('.leftpanel').addClass('displaynone');
+        }
+      });
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

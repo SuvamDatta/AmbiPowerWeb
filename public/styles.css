@@ -30,6 +30,13 @@
 .leftpanel{
   background-color: #800114;
 }
+.hamburgermenu{
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  margin-left: 15px;
+  margin-top: 5px;
+}
 @media only screen and (min-width: 768px) {
   .boldtext {
     font-size: 30px;
