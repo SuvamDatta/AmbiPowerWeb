@@ -8,37 +8,24 @@
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     /* background-color: #f8f9fd; */
   }
-  
-  input[type="text"],
-  input[type="password"] {
-    height: 25px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-  }
-  
+    
   input[type="submit"] {
     margin-top: 10px;
     cursor: pointer;
     font-size: 15px;
-    background: #01d28e;
-    border: 1px solid #01d28e;
+    background: #800114;
     color: #fff;
-    padding: 10px 20px;
+    width: 200px!important;
+    height: 40px!important;
   }
   
   input[type="submit"]:hover {
-    background: #6cf0c2;
+    background: #6b0212;
   }
   
   .button-container {
     display: flex;
     justify-content: center;
-  }
-  
-  .login-form {
-    width: 25%;
-    background-color: white;
-    padding: 2rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
   .list-container {
@@ -62,9 +49,38 @@
     margin: 10px;
   }
 
+  .topbend {
+    height: 10px;
+    width: 100%;
+    position: relative;
+    margin:0 auto;
+    background-color: #800114;
+  }
+  .topbend:after {
+    content: "";
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    bottom: -25%;
+    transition: all 2s;
+  }
+  input{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+  }
+
+  .displaynone{
+    display: none;
+  }
+  .otpsent{
+    color: green;
+  }
   @media only screen and (min-width: 768px) {
     .login-form {
-        width: 25%;
+        width: 30%;
         background-color: white;
         padding: 2rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
