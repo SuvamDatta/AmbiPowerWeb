@@ -24,16 +24,19 @@ function Home() {
       lat: 22.666771,
       lng: 88.444771,
       ambtype: "EmergencyICU",
+      timetoreach : 'Reach By 10 mins',
     },
     {
       lat: 22.615589,
       lng: 88.421989,
       ambtype: "EmergencyICU",
+      timetoreach : 'Reach By 12 mins',
     },
     {
       lat: 22.650928,
       lng: 88.41774,
       ambtype: "OxygenSupport",
+      timetoreach : 'Reach By 3 mins',
     },
   ];
   let id = 0;
@@ -45,7 +48,9 @@ function Home() {
       },
       IsEmergency:
         markerCoordinate[id].ambtype == "EmergencyICU" ? true : false,
-      key: id++,
+      timetoreach:
+        markerCoordinate[id].timetoreach,
+      key: ++id,
     });
   }
   useEffect(() => {
@@ -68,6 +73,9 @@ function Home() {
       { enableHighAccuracy: true }
     );
   }, []);
+  function onMarkerClick(marker){
+    alert(marker.timetoreach);
+  }
   return (
     <div
       className="App row"
@@ -112,14 +120,18 @@ function Home() {
                     position={marker.coordinate}
                     key={marker.key}
                     clickable={true}
-                    icon={"../Images/EmergencyICUMap.png"}
+                    onClick={() => onMarkerClick(marker)}
+                    title= {marker.timetoreach}
+                    icon= {'https://img.icons8.com/?size=40&id=Qe5bInsarTGb&format=png'}
                   />
                 ) : (
                   <Marker
                     position={marker.coordinate}
                     key={marker.key}
                     clickable={true}
-                    icon={"../Images/OxygenSupportMap.png"}
+                    onClick={() => onMarkerClick(marker)}
+                    title= {marker.timetoreach}
+                    icon={'https://img.icons8.com/?size=40&id=38771&format=png'}
                   />
                 )
               )}
