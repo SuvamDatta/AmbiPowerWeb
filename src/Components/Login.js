@@ -5,9 +5,7 @@ import $ from "jquery";
 
 function Login() {
   useEffect(() => {
-    $("#btnSendOtp").on("click", function () {
-      
-    });
+    $(".hamburgermenu").hide();
   }, []);
   const navigate = useNavigate();
   const height = $(window).height();

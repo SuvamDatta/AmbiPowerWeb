@@ -24,6 +24,11 @@ export default (props) => {
       <Link to="/HelpAndSupport" className="textcolor">
         Help And Support
       </Link>
+      <br />
+      <br />
+      <Link to="/Login" className="textcolor">
+        Log Out
+      </Link>
     </div>
   );
 };
