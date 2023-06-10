@@ -1,0 +1,26 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: ambipower
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ambipower
+  template:
+    metadata:
+      labels:
+        app: ambipower
+    spec:
+      containers:
+      - name: ambipower
+        image: suvamdatta/ambipower:latest
+        imagePullPolicy: Always
+        ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          resources:
+            requests:
+              memory: "100Mi"
+              cpu: "10m"
