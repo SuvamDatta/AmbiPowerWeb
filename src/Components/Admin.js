@@ -1,12 +1,11 @@
 import React, { useRef, useEffect, useState } from "react";
 
-function MyServices() {
+function Admin() {
  
-
+ 
   return (
     <div className="">
-      <h2>My Services</h2>
     </div>
   );
 }
-export default MyServices;
+export default Admin;

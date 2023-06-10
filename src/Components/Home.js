@@ -10,8 +10,8 @@ function Home() {
   var [Lattitude, SetLattitude] = useState(0);
   var [Longitude, SetLongitude] = useState(0);
   var center = {
-    lat: 22.565570,
-    lng: 88.370210,
+    lat: 22.56557,
+    lng: 88.37021,
   };
   var [LatLong, SetLatLong] = useState(center);
   const containerStyle = {
@@ -81,12 +81,10 @@ function Home() {
           width: width * 0.2,
           marginTop: 1,
         }}
-        className=""
-      > 
-       <div id="page-wrap">
-      <Sidebar/>
+        className="leftpanel"
+      >
+        <Sidebar />
       </div>
-    </div>
       <div
         style={{
           height: "100%",
@@ -106,20 +104,20 @@ function Home() {
               center={LatLong}
               zoom={10}
             >
-              <Marker position={LatLong} clickable = {true}/>
+              <Marker position={LatLong} clickable={true} />
               {markers.map((marker) =>
                 marker.IsEmergency == true ? (
                   <Marker
                     position={marker.coordinate}
                     key={marker.key}
-                    clickable = {true}
+                    clickable={true}
                     icon={"../Images/EmergencyICUMap.png"}
                   />
                 ) : (
                   <Marker
                     position={marker.coordinate}
                     key={marker.key}
-                    clickable = {true}
+                    clickable={true}
                     icon={"../Images/OxygenSupportMap.png"}
                   />
                 )

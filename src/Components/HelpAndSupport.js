@@ -1,12 +1,11 @@
 import React, { useRef, useEffect, useState } from "react";
 
-function Driver() {
+function HelpAndSupport() {
  
  
   return (
     <div className="">
-      <h2>Driver Page</h2>
     </div>
   );
 }
-export default Driver;
+export default HelpAndSupport;
