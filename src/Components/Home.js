@@ -49,6 +49,7 @@ function Home() {
     });
   }
   useEffect(() => {
+    $('.hamburgermenu').show();
     navigator.geolocation.getCurrentPosition(
       (position) => {
         Lattitude = position.coords.latitude;
