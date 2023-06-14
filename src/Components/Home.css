@@ -1,7 +1,48 @@
 #page-wrap {
-    padding-bottom: 10px;
-    padding-top: 10px;
-  }
-  * {
-    box-sizing: border-box;
-  }
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+.righttopambtype {
+  border: 1px solid black;
+  height: 30px;
+  width: 100%;
+  margin-bottom: 1px;
+}
+.textclass {
+  margin: 3px;
+  font-size: medium;
+  font-weight: 600;
+}
+.imgclass {
+  margin-left: 8px;
+}
+.textclass1 {
+  margin-left: 30px;
+}
+.bottomrightdiv {
+  border-top: 1px solid black;
+  margin-top: 1px;
+}
+.txtavamb {
+  border-bottom: 1px dotted black;
+}
+.totaldiv {
+  margin-top: 19px;
+  text-align: left;
+  margin-left: 30px;
+}
+.ambimg {
+  position: absolute;
+  margin-top: -8px;
+}
+.divwidth {
+  width: 209px;
+  margin-left: 45px;
+}
+.txtbooked{
+  color: green;
+  display: none;
+}
