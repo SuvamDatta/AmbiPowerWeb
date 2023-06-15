@@ -25,9 +25,11 @@
 .bottomrightdiv {
   border-top: 1px solid black;
   margin-top: 1px;
+  text-align:center;
 }
 .txtavamb {
   border-bottom: 1px dotted black;
+  margin-right: 300px;
 }
 .totaldiv {
   margin-top: 19px;
@@ -45,4 +47,22 @@
 .txtbooked{
   color: green;
   display: none;
+}
+.btnRmvBooking{
+  display: none;
+  margin-left: 40px;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: white;
+  background-color: darkmagenta;
+  height: 25px;
+  cursor: pointer; 
+}
+.btnbookamb{
+  border: 2px solid black;
+  border-radius: 5px;
+  color: white;
+  background-color: darkmagenta;
+  height: 25px;
+  cursor: pointer; 
 }

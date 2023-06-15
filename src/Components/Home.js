@@ -73,11 +73,20 @@ function Home() {
     );
     for (let index = 1; index < 100; index++) {
       $("#" + index).on("click", function () {
-        $("#" + index).hide();
+        $(".btnbookamb").hide();
         $("#" + index)
           .parent()
           .find(".txtbooked")
           .show();
+          $("#" + index)
+          .parent()
+          .find(".btnRmvBooking")
+          .show();
+      });
+      $('.btnRmvBooking').on('click',function(){
+        $(".btnbookamb").show();
+        $(".txtbooked").hide();
+        $('.btnRmvBooking').hide();
       });
     }
   }, []);
@@ -190,8 +199,9 @@ function Home() {
                     {marker.timetoreach}
                   </text>
                 </div>
-                <button id={marker.key}>Book Ambulance</button>
+                <button id={marker.key} className="btnbookamb">Book Ambulance</button>
                 <text className="txtbooked">Booked!</text>
+                <button className="btnRmvBooking">Remove Booking</button>
               </div>
             ) : (
               <div className="totaldiv row">
@@ -207,8 +217,9 @@ function Home() {
                     {marker.timetoreach}
                   </text>
                 </div>
-                <button id={marker.key}>Book Ambulance</button>
+                <button id={marker.key} className="btnbookamb">Book Ambulance</button>
                 <text className="txtbooked">Booked!</text>
+                <button className="btnRmvBooking">Remove Booking</button>
               </div>
             )
           )}
