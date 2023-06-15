@@ -1,5 +1,4 @@
-import { React, useRef, useEffect, useState, useCallback } from "react";
-import { Link } from "react-router-dom";
+import { React, useEffect, useState } from "react";
 import $ from "jquery";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import Sidebar from "./Sidebar";
@@ -7,19 +6,19 @@ import "./Home.css";
 function Home() {
   const height = $(window).height();
   const width = $(window).width();
-  var [Lattitude, SetLattitude] = useState(0);
-  var [Longitude, SetLongitude] = useState(0);
-  var center = {
+  let [Lattitude, SetLattitude] = useState(0);
+  let [Longitude, SetLongitude] = useState(0);
+  let center = {
     lat: 22.56557,
     lng: 88.37021,
   };
-  var [LatLong, SetLatLong] = useState(center);
+  let [LatLong, SetLatLong] = useState(center);
   const containerStyle = {
     width: width * 0.8,
     height: "100%",
   };
-  var markers = [];
-  var markerCoordinate = [
+  let markers = [];
+  let markerCoordinate = [
     {
       lat: 22.650928,
       lng: 88.41774,
@@ -184,7 +183,7 @@ function Home() {
           <br />
           {markers.map((marker) =>
             marker.IsEmergency === true ? (
-              <div className="totaldiv row">
+              <div className="totaldiv row" key={marker.key}>
                 <img
                   className="ambimg"
                   src="https://img.icons8.com/?size=40&id=38771&format=png"
@@ -204,7 +203,7 @@ function Home() {
                 <button className="btnRmvBooking">Remove Booking</button>
               </div>
             ) : (
-              <div className="totaldiv row">
+              <div className="totaldiv row" key={marker.key}>
                 <img
                   className="ambimg"
                   src="https://img.icons8.com/?size=40&id=Qe5bInsarTGb&format=png"

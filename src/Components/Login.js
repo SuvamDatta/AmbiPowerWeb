@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./login.css";
 import { useNavigate } from "react-router-dom";
 import $ from "jquery";
@@ -8,8 +8,6 @@ function Login() {
     $(".hamburgermenu").hide();
   }, []);
   const navigate = useNavigate();
-  const height = $(window).height();
-  const width = $(window).width();
   const [txtPhNumber, setChangePhNo] = React.useState("");
   const [txtOtp, setChangeOTP] = React.useState("");
   const [txtUserName, setUserName] = React.useState("");
