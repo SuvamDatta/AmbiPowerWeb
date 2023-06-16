@@ -22,7 +22,7 @@ export default (props) => {
       <br />
       <br />
       <Link to="/RegisterAmbulance" className="textcolor">
-        Register As Ambulance
+        Register My Ambulance
       </Link>
       <br />
       <br />
