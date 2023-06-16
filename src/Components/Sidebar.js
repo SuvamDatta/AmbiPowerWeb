@@ -11,16 +11,28 @@ export default (props) => {
       </Link>
       <br />
       <br />
+      <Link to="/Payments" className="textcolor">
+        Payments
+      </Link>
+      <br />
+      <br />
+      <Link to="/MyBooking" className="textcolor">
+        My Bookings
+      </Link>
+      <br />
+      <br />
+      <Link to="/RegisterAmbulance" className="textcolor">
+        Register As Ambulance
+      </Link>
+      <br />
+      <br />
       <Link to="/Driver" className="textcolor">
-        Driver Registration
+        Register As Driver
       </Link>
       <br />
       <br />
-      <Link to="/Admin" className="textcolor">
-        Administrative Section
-      </Link>
-      <br />
-      <br />
+      
+      
       <Link to="/HelpAndSupport" className="textcolor">
         Help And Support
       </Link>

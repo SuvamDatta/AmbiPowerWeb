@@ -1,0 +1,51 @@
+.largetext {
+  font-size: 40px;
+  font-weight: 600;
+  border-bottom: 1px dotted black;
+  margin-left: -271px;
+}
+.divmargin {
+  margin-top: 30px;
+  margin-left: 100px;
+  width: 400px;
+}
+.label {
+  width: 150px;
+}
+.txtfield {
+  width: 250px;
+}
+.tblclass {
+  margin-top: 50px;
+  margin-left: 150px;
+}
+.dvparent {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.btnRegister {
+  margin-right: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: white;
+  background-color: green;
+  height: 35px;
+  cursor: pointer;
+}
+.btnCancel{
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    background-color: grey;
+    height: 35px;
+    cursor: pointer;
+}
+.trdatasaved{
+    display: none;
+}
+.lblBold{
+    font-size: 20px;
+    font-weight: 400;
+    color: green;
+}

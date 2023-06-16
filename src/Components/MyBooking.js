@@ -1,11 +1,9 @@
 import React from "react";
 
-function Admin() {
- 
- 
+function MyBooking() {
   return (
     <div className="">
     </div>
   );
 }
-export default Admin;
+export default MyBooking;
